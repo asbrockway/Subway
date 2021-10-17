@@ -266,6 +266,15 @@ function line_select_click_handler(td) {
         } else if ($(td).attr('id') == "subway-a-euclid") {
             // Special case for AirTrain.
             N_active_line = find_line_by_name("A-Euclid", 1);
+        } else if ($(td).attr('id') == "M-1") {
+            // Special case for AirTrain.
+            N_active_line = find_line_by_name("M-1", 1);
+        } else if ($(td).attr('id') == "V-2") {
+            // Special case for AirTrain.
+            N_active_line = find_line_by_name("HQB", 1);
+        } else if ($(td).attr('id') == "HQB") {
+            // Special case for AirTrain.
+            N_active_line = find_line_by_name("V-2", 1);
 
         } else if ($(td).hasClass("subway-shuttle")) {
             active_line = $(td).attr('id');

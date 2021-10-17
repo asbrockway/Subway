@@ -131,6 +131,13 @@ function initialize_game_state() {
     N_lines.push(new Line('AirTrain JFK-Archer', '&#9992;', 'subway-line', '#FFF200', '#000000'));
     N_lines.push(new Line('AirTrain JFK-Connectors', '&#9992;', 'subway-line', '#FFF200', '#000000'));
     N_lines.push(new Line('TriboroRX', 'TriboroRX', 'subway-line-long', '#FCCC0A', '#000000'));
+    N_lines.push(new Line('M-1', 'M', 'subway-line', '#996633', '#FFFFFF'));
+    N_lines.push(new Line('HQB', 'H', 'subway-line', '#6CBE45', '#FFFFFF'));
+    N_lines.push(new Line('P', 'P', 'subway-line', '#6CBE45', '#FFFFFF'));
+    N_lines.push(new Line('U', 'U', 'subway-line', '#1E9DBF', '#FFFFFF'));
+    N_lines.push(new Line('V-2', 'V', 'subway-line', '#1E9DBF', '#FFFFFF'));
+    N_lines.push(new Line('K-14', 'K', 'subway-line', '#A7A9AC', '#FFFFFF'));
+    N_lines.push(new Line('S-42', '&@127822;', 'subway-line', '#808183', '#FFFFFF'));
 
     //Saving space here in case we want to add more defaults later
     for(var i = 0; i < 50; i++) {
@@ -150,7 +157,7 @@ function initialize_game_state() {
     N_line_groups.push(new LineGroup('#0039A6', [find_line_by_name('A').id, find_line_by_name('A-Euclid').id, find_line_by_name('C').id, find_line_by_name('E').id, find_line_by_name('H').id, find_line_by_name('K').id, find_line_by_name('SIRR').id]));
     N_line_groups.push(new LineGroup('#FF6319', [find_line_by_name('B').id, find_line_by_name('D').id, find_line_by_name('F').id, find_line_by_name('M').id, find_line_by_name('V').id]))
     N_line_groups.push(new LineGroup('#6CBE45', [find_line_by_name('G').id]));
-    N_line_groups.push(new LineGroup('#996633', [find_line_by_name('J').id, find_line_by_name('Z').id]));
+    N_line_groups.push(new LineGroup('#996633', [find_line_by_name('J').id, find_line_by_name('M-1').id, find_line_by_name('Z').id]));
     N_line_groups.push(new LineGroup('#A7A9AC', [find_line_by_name('L').id]));
     N_line_groups.push(new LineGroup('#FCCC0A', [find_line_by_name('N').id, find_line_by_name('Q').id, find_line_by_name('R').id, find_line_by_name('W').id, find_line_by_name('TriboroRX').id]));
     N_line_groups.push(new LineGroup('#808183', [find_line_by_name('S-1').id, find_line_by_name('S-2').id, find_line_by_name('S-3').id, find_line_by_name('S-4').id]));
